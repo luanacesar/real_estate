@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Property Listing Pages</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="css/styleLuana.css">
+</head>
+<body>
+<div id="wrapper">
+  <header>
+    <h1>Tavares Realty Agency</h1>
+  </header>  
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="directions.html">Property Listing Pages</a></li>
+      <li><a href="contact.html">Available Properties for sale</a></li>
+      <li><a href="contact.html">Contact Form</a></li>
+      <li><a href="contact.html">Site Map and Credits</a></li>
+    </ul> 
+  </nav>
+   <div id="content">
+      <h1>Contact us</h1>
+      <form method = "post" action = "mailto:luana_cesar@hotmail.com">
+      <fieldset>
+      <legend>Your contact information</legend>
+        <labe>First Name:
+          <input type="Name" />
+          <label> Last name:
+            <input type=" " name="">
+          </label>
+         <p>
+            <label>Email:
+               <input type = "email" placeholder = "name@domain.com" 
+                  required /> (name@domain.com)
+            </label>
+         </p>
+         <p>
+            <label>Tel:
+               <input type = "tel" placeholder = "(###) ###-####" 
+                  pattern = "\(\d{3}\) +\d{3}-\d{4}" required /> 
+                  (###) ###-####
+            </label>
+         </p>
+         <p>
+            <input type = "submit" value = "Submit Form" />
+            <input type = "reset" value = "Clear Form" />
+         </p> 
+       </fieldset>    
+      </form>
+      <fieldset>    
+      <legend>About the property</legend>
+        <label id="lblPType">Type</label><br/>
+        <input name="Type" type="radio" value="House" tabindex="5" checked="checked"/>Detached House
+        <input name="Type" type="radio" value="House" tabindex="6"/>Town House
+        <input name="Type" type="radio" value="House" tabindex="7"/>Condo
+        <input name="Type" type="radio" value="House" tabindex="8"/>Apartment
+        <table>
+          <tr>
+            <td>
+              <label>Bedrooms: </label><select name="bedrooms" tabindex="9">
+                <option value="1" selected="selected">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5+">5+</option>
+              </select>
+            </td>
+          </tr>
+        </table>
+        </td>
+            <td>
+              <label>Bathrooms: </label><select name="bathrooms" tabindex="10">
+                <option value="1" selected="selected">1</option>
+                <option value="2">2</option>
+                <option value="3+">3+</option>
+              </select>
+            </td>
+          </tr>
+        </table>
+        <label>Price Range: </label><select name="price" tabindex="11">
+          <option value="up to 499,999" selected="selected">up to $499,999</option>
+          <option value="500,000 to 749,999">$500,000 to $749,999</option>
+          <option value="800,000 to 999,999">$800,000 to $999,999</option>
+          <option value="1,000,000 or more">$1,000,000 or more</option>
+        </select><br/>
+        <label>Additional Information:<br/>
+        <textarea tabindex="12" name="Additional information" id="additionalinfo" placeholder="Use this space to provide additional information about the real estate you are interested in." style="width:100%; height: 100px"></textarea></label>
+      </fieldset>
+      <input type="submit" value="Submit"/>
+      <input type="reset" value="Clear Form"/>
+  </form>
+      </fieldset>
+      </div>
+       </div>
+   </main>
+   </body>
+   <footer><br>Copyright &copy; 2020
+   </footer>
+</html>
